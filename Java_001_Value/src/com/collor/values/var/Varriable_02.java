@@ -1,0 +1,35 @@
+package com.collor.values.var;
+
+public class Varriable_02 {
+
+	
+	public static void main(String[] args) {
+		
+		/* 변수의선언 변수는 사용(저장,읽기) 하기전에 반드시 선언을 해야한다 선언키워드 변수명;
+		 * 어떤 기억장소에 값을 저장할수 있도록 예약하는 절차
+		 */
+		
+		int numbers;
+		
+		/* 이미 선언된 변수 이름은 같은 이름으로 다시 선언할수 없다
+		 *  
+		 */
+		
+		// int num1 = 100;
+	
+		// int Integer = 정수
+		int num1 = 100;
+		int num2 = 200;
+		
+		num1=300;
+		num2=400;
+		
+		System.out.println(num1+num2);
+		System.out.println(num1-num2);
+		System.out.println(num1*num2);
+		System.out.println(num1/num2);
+		System.out.println(num1%num2);
+		
+		
+	}
+}
