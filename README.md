@@ -32,5 +32,3 @@
 		com.callor.score
 		com.naver.news
 		net.daum.cafe	
-
-
