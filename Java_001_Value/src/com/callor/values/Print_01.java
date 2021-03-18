@@ -1,6 +1,6 @@
 package com.callor.values;
 
-public class print_01 {
+public class Print_01 {
 
 	
 	public static void main(String[] args) {
