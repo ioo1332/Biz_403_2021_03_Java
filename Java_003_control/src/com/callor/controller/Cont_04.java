@@ -31,9 +31,7 @@ public class Cont_04 {
 	for(int i=0;i<10;i++) {int n = i+1; intSum+=n;}
 
 
-	intSum=0;
-	for( int index=0;index<10;index+=2) {intNum=index+1;
-	intSum+num;}
+	
 	}
 	}
 	
