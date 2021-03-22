@@ -32,16 +32,20 @@ public class Controller_02 {
 		 * 관계연산자 2가지이상의 비교연산을 동시수행하기위한 연산
 		 */
 
-		// &&는 true:1 ,false:0 으로 하는 곱셈 연산을 기억하면 된다
-		bYes = true && true; // ture 1*1
-		bYes = true && false; // false 1*0
-		bYes = false && true; // false 0*1
-		bYes = false && false; // false 0*0
-		// || filter기호는 treu false 1과0으로 덧셈을 연산한다
-		bYes = true || true; // ture 1+1
-		bYes = true || false; // true 1+0
-		bYes = false || true; // true 0+1
-		bYes = false || false; // false 0+0
+		// && 는 true : 1, false 0으로 하는 곱셈
+		// 연산을 기억하면 된다.
+		bYes = true && true; // 1 * 1 = 1 : true
+		bYes = true && false; // 1 * 0 = 0 :false
+		bYes = false && true; // 0 * 1 = 0 : false
+		bYes = false && false; // 0 * 0 = 0 : false
+
+		// ||(filter 기호) 는 true : 1, false 0으로하여
+		// 덧셈을 연상한다
+		bYes = true || true;// 1 + 1 = 1(있다) : true
+		bYes = true || false; // 1 + 0 = 1 : true
+		bYes = false || true; // 0 + 1 = 1 : true
+		bYes = false || false; // 0 + 0 = 0 : false
 
 	}
+
 }
