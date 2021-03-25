@@ -8,5 +8,6 @@ public static void main(String[] args) {
 	
 	esV2.makeNums();
 	esV2.printEven();
+	esV2.sumEven();
 }
 }

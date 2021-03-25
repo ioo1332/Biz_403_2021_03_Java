@@ -53,7 +53,7 @@ public class PrimeServiceV1 {
 	// Random 클래스로 값을 만들어 저장
 	public void makeNums() {
 		Random rnd=new Random();
-		for (int i=0;1<intNums.length;i++) {
+		for (int i=0;i<intNums.length;i++) {
 			intNums[i]=rnd.nextInt(51)+50;
 		}
 		

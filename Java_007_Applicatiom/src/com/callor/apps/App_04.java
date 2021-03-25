@@ -8,5 +8,6 @@ public static void main(String[] args) {
 	PrimeServiceV2 psV2=new PrimeServiceV2();
 	
 	psV2.makeNums();
+	psV2.printPrime();
 }
 }

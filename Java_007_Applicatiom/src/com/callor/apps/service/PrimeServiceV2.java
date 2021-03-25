@@ -5,7 +5,7 @@ import java.util.Random;
 public class PrimeServiceV2 {
 
 	int[] intNums;
-	public void primeServiceV2() {
+	public PrimeServiceV2() {
 		intNums= new int[20];
 	}
 	

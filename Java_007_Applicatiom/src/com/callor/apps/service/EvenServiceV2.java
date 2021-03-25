@@ -6,28 +6,22 @@ package com.callor.apps.service;
  * V1에 작성된 method 들의 코드를 그대로 사용하면서 
  * 일부method 들의 코드를 변경 확장 기능 개선을 하여 내 프로젝트에 적용하겠다 
  */
-import java.util.Random;
-
 public class EvenServiceV2 extends EvenServiceV1 {
 
-	int[] intNums;
-
 	public EvenServiceV2() {
-		intNums = new int[100];
+		intNums = new int[100]; // 생성은 생성자에서
 	}
-
-
 	public void printEven() {
-		int intSum = 0;
-
-		for (int i = 0; i < intNums.length; i++) {
-			if (intNums[i] % 2 == 0) {
-				System.out.println(intNums[i]);
-				intSum += intNums[i];
+		int nCount = 0;
+		for(int i = 0 ; i < intNums.length ; i++) {
+			if(intNums[i] % 2 == 0) {
+				System.out.printf("%4d",intNums[i]);
+				nCount++;
+				if(nCount % 5 == 0) {
+					System.out.println();
+				}
 			}
 		}
-
-		System.out.printf("합계:" + intSum);
+		System.out.println();
 	}
-
 }
