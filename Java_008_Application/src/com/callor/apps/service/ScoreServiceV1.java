@@ -14,7 +14,7 @@ public class ScoreServiceV1 {
 	int[] intMath;
 	int[] intTotal;
 	float[] floatAvg;
-	
+
 	Scanner scan = new Scanner(System.in);
 
 	public void scoreService() {
@@ -22,45 +22,41 @@ public class ScoreServiceV1 {
 		intKor = new int[5];
 		intEng = new int[5];
 		intMath = new int[5];
+		intTotal=new int[5];
+		floatAvg=new float[5];
 		
+
 	}
-	
-	
+
 	public void makeScore() {
 		for(int i=0;i<nums.length;i++) {
 			nums[i]=1+i;
 			System.out.printf("학생:%d\t",nums[i]);
-			System.out.print("국어:\t"+intKor[i]);
+			System.out.printf("국어:%d",intKor[i]);
 			intKor[i]=scan.nextInt();
-			System.out.print("영어:\t"+intEng[i]);
+			System.out.printf("영어:%d",intEng[i]);
 			intEng[i]=scan.nextInt();
-			System.out.print("수학:\t"+intMath[i]);
+			System.out.printf("수학:%d",intMath[i]);
 			intMath[i]=scan.nextInt();
-		
-		
-			intTotal[i]=intKor[i];
-			intTotal[i]+=intEng[i];
-			intTotal[i]+=intMath[i];
-			System.out.print("총점\t"+intTotal[i]);
-			floatAvg[i]=(float)intTotal[i]/3;
-			
 		}
 	}
-		public void printList() {
-			System.out.println("==================");
-			System.out.println("국어\t 영어\t 수학\t 총점\t 평균");
-			System.out.println("==================");
-			
-			
-			
+		
+	public void makeSum() {
+		for (int i = 0; i < nums.length; i++) {
+			intTotal[i] = intKor[i];
+			intTotal[i] += intEng[i];
+			intTotal[i] += intMath[i];
+			System.out.print("총점\t" + intTotal);
+			floatAvg[i] = (float) intTotal[i] / 3;
+		
 		}
-	
-		
-		
-		
-		
+	}
 
-		
+	public void printList() {
+		System.out.println("==================");
+		System.out.println("국어\t 영어\t 수학\t 총점\t 평균");
+		System.out.println("==================");
 
-	
+	}
+
 }
