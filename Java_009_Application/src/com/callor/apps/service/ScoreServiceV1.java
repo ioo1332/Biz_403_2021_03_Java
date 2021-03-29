@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class ScoreServiceV1{
 
 	// 클래스영역에 scanner클래스를 사용하여
-	// sscan객체를 선언
+	// scan객체를 선언
 	// NullPointException
 	// jdk또는 여러가지 클래스를 가져와 사용하는경우
 	// 매우자주 만나는 Exception
