@@ -1,6 +1,6 @@
 package com.callor.classes.service;
 
-public class MethodSercice {
+public class MethodService {
 
 	// 변수는 같은{}내에서는 같은 이름으로 절대 중복 선언할수 없다
 	public void method(int num) {
