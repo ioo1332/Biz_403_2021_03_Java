@@ -12,6 +12,6 @@ public class AddrEx_01 {
 		aVO.setTel("010-1111-1111");
 		aVO.setAge(200);
 		
-		System.out.println(aVO.getName()+"의나이는?",aVO.getAge);
+		System.out.println(aVO.getName()+ "의 나이는 ? : " + aVO.getAge() );
 	}
 }

@@ -12,10 +12,14 @@ public class ValueService {
  */
 	private int retNum;
 	public int  getRetNum() {
+		return retNum;
+	}
+	public void nums() {
 		// nums method는 어떤 연산을 수행하고 그 결과갑인 100을 호출한곳에 return하고싶다
 		// void method에서는 값을 return 할수 없다
 		// 맴버변수를 선언하고 맴버변수에 값을 저장해두었다
-		retNum=100;
+		
+	retNum=100;
 	}
 	
 	public Integer numsRet() {

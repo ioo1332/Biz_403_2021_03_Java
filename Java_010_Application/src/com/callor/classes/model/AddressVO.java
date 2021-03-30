@@ -19,12 +19,13 @@ public class AddressVO {
 	 */
 	public void setAge(Integer age) {
 		if(age>1&& age<120) {
+			this.age = age;
 		}else {
 			this.age=null;
 		}
 	}
 	public Integer getAge() {
-		this.age=age;
+		return this.age=age;
 	}
 	
 	public void setName(String name) {
