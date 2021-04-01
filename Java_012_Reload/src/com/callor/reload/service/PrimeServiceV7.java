@@ -32,6 +32,12 @@ public class PrimeServiceV7 {
 		}
 	}
 	private void addPrime(int rndNum) {
+		for(int i = 2 ; i < rndNum ; i++) {
+			if(rndNum % 2 == 0) {
+				return;
+			}
+		}
+		primeList.add(rndNum);
 		
 	}
 }

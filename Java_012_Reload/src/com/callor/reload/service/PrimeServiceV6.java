@@ -20,7 +20,7 @@ public class PrimeServiceV6 {
 			int rndNum=rnd.nextInt(51)+50;
 			if (this.isPrime(rndNum)) {
 				//primeList.add(rndNum);
-				this.addPirme(rndNum);
+				this.addPrime( rndNum );
 			}
 		}
 	}
@@ -35,8 +35,8 @@ public class PrimeServiceV6 {
 				return false;
 			}
 		}
-		//return true;
-		primeList.add(rndNum);
+		return true;
+		//primeList.add(rndNum);
 		
 	}
 	private void addPrime (int rndNum) {
