@@ -17,7 +17,7 @@ public class Number_03 {
 		
 		// 입력된 문자열에 혹시 있을지모를 whitespace를 제거하고 
 		// 문자열이 QUIT인가를 검사하는 코드
-		// 객체의 chainning
+		// 객체의 chaining
 		if(strInput.trim().equals("QUIT")) {
 			System.out.println("종료합니다");
 		}else {

@@ -1,7 +1,5 @@
 package com.callor.method.service;
 
-import com.callor.method.InputService;
-
 public class NumberServiceV6 {
 
 	protected InputService inService;

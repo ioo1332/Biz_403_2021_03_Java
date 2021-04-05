@@ -23,21 +23,27 @@ public class Number_02 {
 		 * 이과정에서 수자값으로 변환할수 없는 문자열이
 		 * 섞여있는 경우 NumberFormatException이 발생한다
 		 */
-		intNum1=Integer.valueOf("100");
-		// NumberFormatException 이 발생하는 코드
-		intNum1=Integer.valueOf(" 100");
-		intNum1=Integer.valueOf("100 ");
+		intNum1 = Integer.valueOf("100");
+		intNum1 = Integer.valueOf( 30 + ""); // "30"
+		intNum1 = Integer.valueOf("" + 30);
 		
-		intNum1=Integer.valueOf("A100");
-		intNum1=Integer.valueOf("100A");
-		intNum1=Integer.valueOf("100 00");
+		// NumberFormatException 이 발생하는 코드들
+		intNum1 = Integer.valueOf(100 + " ");
+		intNum1 = Integer.valueOf("100 ");
 		
-		// ""은 null과 유사한값
-		// 자바에서는 ""과 null을 완전히 같은것으로 취급하지않는다
-		intNum1=Integer.valueOf("");
-		intNum1=Integer.valueOf(null);
-		intNum1=Integer.valueOf(""+30); // 빈칸이 있으면 안됨
-		intNum1=intNum1=Integer.valueOf(30+""); // "30"
+		intNum1 = Integer.valueOf(" 100");
+		intNum1 = Integer.valueOf("100 00");
+		
+		intNum1 = Integer.valueOf("A100");
+		intNum1 = Integer.valueOf("100A");
+		intNum1 = Integer.valueOf("100*");
+		intNum1 = Integer.valueOf("100*100");
+		
+		// "" 은 null 과 유사한 값이다
+		// 자바에서는 "" 과 null을 완전히 같은 것으로
+		//	취급하지 않는다
+		intNum1 = Integer.valueOf("");
+		intNum1 = Integer.valueOf(null);
 	}
 	
 }
