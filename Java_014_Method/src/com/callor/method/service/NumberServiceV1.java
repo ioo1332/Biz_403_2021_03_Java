@@ -25,6 +25,7 @@ public class NumberServiceV1 {
 	
 	
 	public Integer addNum(int num1,int num2) {
+		//TODO 두 정수의 합이 짝수인가 하는 method
 		// 첫번째 방법
 		// 어떤 연산을 수행하고 연산결과에 따라 return 등을 수행해야하는경우
 		// 연산된 결과를 변수에 담아놓고 이후 코드를 진행하자
@@ -48,10 +49,37 @@ public class NumberServiceV1 {
 		//   return num1+num2;
 		//}
 		//return null;
-			
 	
-	
-	}
+	}//addNum(int num1,int num2) 끝
 		
+	
+	/* java의 method 는 매개변수에 따라 호출한느 방식이 달라진다
+	 * 만약 addNum(정수,정수)방식으로 호출하려면
+	 * addNum(int num1,int num2)형식으로 선언해야하고
+	 * 
+	 * addNum(실수,실수) 방식으로 호출하려면
+	 * addNum(float num1,float num2) 방식으로 선언해야한다
+	 * addNum(double num1,double num2)
+	 * method를 호출할때 전달하는 데이터의 타입에 맞도록 
+	 * method가 미리 만들어져있어야한다
+	 */
+	public Float addNum(float num1,float num2) {
+		//TODO 두 실수를 전달받아 짝수인가 판별하는 코드
+		float sum=num1+num2;
+		if(sum%2==0) {
+			return sum;
+		}
+		
+		//method코드가 아직 작성되지않을때
+		//문법오류가 나는 것을 방지하는 임시코드
+		return null;
+	}
+	
+	public Float addNum(int num1,float num2) {
+		return null;
+	}
+	public Float addNum(float num1,int num2) {
+		return null;
+	}
 	}
 
