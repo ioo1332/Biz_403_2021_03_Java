@@ -8,29 +8,25 @@ import java.util.Scanner;
  */
 public class ScoreServiceV1 {
 	protected Scanner scan;
-	
+
 	public ScoreServiceV1() {
 		// TODO Auto-generated constructor stub
-		scan =new Scanner(System.in);
-		
+		scan = new Scanner(System.in);
+
 	}
-	public static void main(String[] args) {
-		InputNumberServiceV1 inV1=new InputNumberServiceV1();
-		Integer retNum=inV1.inputValue("국어",0,100);
-		while (true) {
-			if(retNum==null) {
-				System.out.println("종료");
-			}
-		}
-		
-		
-		
-	}
-	
-	
+
 	public Integer inputScore() {
-		
-		
-		return null;
+		InputServiceV1 inV1 = new InputServiceV1();
+		Integer retNum = inV1.inputValue("국어", 0, 100);
+		while (true) {
+			if (retNum == null) {
+				System.out.println("종료");
+			} else {
+				System.out.printf("점수:%d", retNum);
+			}
+
+			return null;
+		}
+
 	}
 }

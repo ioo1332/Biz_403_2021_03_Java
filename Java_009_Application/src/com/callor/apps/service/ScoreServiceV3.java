@@ -14,7 +14,7 @@ public class ScoreServiceV3 {
 	public ScoreServiceV3(int members) {
 
 		scan = new Scanner(System.in);
-		subject = new String[] { "국어,영어,수학" };
+		subject = new String[] { "국어","영어","수학" };
 		intKor = new int[members];
 		intEng = new int[members];
 		intMath = new int[members];

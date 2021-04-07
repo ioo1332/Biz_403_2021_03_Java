@@ -6,10 +6,10 @@ package com.callor.method.service;
  */
 import java.util.Scanner;
 
-public class InputNumberServiceV1 {
+public class InputServiceV1 {
 	protected Scanner scan;
 
-	public InputNumberServiceV1() {
+	public InputServiceV1() {
 		scan = new Scanner(System.in);
 		// TODO Auto-generated constructor stub
 
