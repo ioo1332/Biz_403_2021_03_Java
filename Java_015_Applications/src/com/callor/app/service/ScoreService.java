@@ -4,7 +4,7 @@ public interface ScoreService {
 
 	public void selectMenu();
 	public void inputName();
-	public Integer inputScore();
+	public void inputScore();
 	public void printScore();
 	
 }

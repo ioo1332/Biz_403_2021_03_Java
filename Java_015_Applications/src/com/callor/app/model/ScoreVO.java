@@ -67,7 +67,7 @@ public class ScoreVO {
 		Integer sum=this.kor;
 		sum+=this.eng;
 		sum+=this.math;
-		return total;
+		return sum;
 	}
 	
 	public float getAvg() {

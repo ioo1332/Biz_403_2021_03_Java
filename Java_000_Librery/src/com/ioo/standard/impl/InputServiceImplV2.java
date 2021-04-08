@@ -1,6 +1,6 @@
-package com.ioo1332.standard.impl;
+package com.ioo.standard.impl;
 
-import com.ioo1332.standard.InputService;
+import com.ioo.standard.InputService;
 
 public class InputServiceImplV2 implements InputService{
 

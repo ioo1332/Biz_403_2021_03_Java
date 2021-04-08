@@ -1,8 +1,8 @@
-package com.ioo1332.standard.impl;
+package com.ioo.standard.impl;
 
 import java.util.Scanner;
 
-import com.ioo1332.standard.InputService;
+import com.ioo.standard.InputService;
 
 /* 인터페이스를 implements한 클래스는 이름을 지을때 보통 접미사에 Impl을 붙임
  * 인터페이스를 impl한 클래스는 인터페이스에 설계된 추상 method를

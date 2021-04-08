@@ -1,11 +1,11 @@
-package com.ioo1332.standard;
+package com.ioo.standard;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Vector;
 
-import com.ioo1332.standard.impl.InputServiceImplV1;
-import com.ioo1332.standard.impl.InputServiceImplV2;
+import com.ioo.standard.impl.InputServiceImplV1;
+import com.ioo.standard.impl.InputServiceImplV2;
 
 public class Ex_01 {
 

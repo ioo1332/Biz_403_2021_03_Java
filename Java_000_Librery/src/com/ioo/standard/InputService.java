@@ -1,4 +1,4 @@
-package com.ioo1332.standard;
+package com.ioo.standard;
 /* interface
  * java언어를 사용하는 프로젝트를 구현할때 모든 코드는 클래스를 기초로 만들어진다
  * 클래스를 만들기 위해서는 여러가지 조건에 맞도록 설계를 해야한다

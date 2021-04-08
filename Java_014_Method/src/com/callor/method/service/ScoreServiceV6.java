@@ -79,11 +79,11 @@ public class ScoreServiceV6 {
 			if (intkor == null) {
 				return;
 			}
-			Integer inteng = inservice.inputValue("국어", 0, 100);
+			Integer inteng = inservice.inputValue("영어", 0, 100);
 			if (intkor == null) {
 				return;
 			}
-			Integer intmath = inservice.inputValue("국어", 0, 100);
+			Integer intmath = inservice.inputValue("수학", 0, 100);
 			if (intkor == null) {
 				return;
 			}
