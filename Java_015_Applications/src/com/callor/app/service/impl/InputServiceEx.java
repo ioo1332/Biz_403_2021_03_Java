@@ -4,7 +4,7 @@ public class InputServiceEx {
 	
 	public static void main(String[] args) {
 		
-		InputServiceV1 isV1=new InputServiceV1();
+		ScoreServiceImplV1 isV1=new ScoreServiceImplV1();
 		isV1.selectMenu();
 	
 		

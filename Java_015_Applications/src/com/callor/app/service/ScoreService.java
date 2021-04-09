@@ -7,4 +7,6 @@ public interface ScoreService {
 	public void inputScore();
 	public void printScore();
 	
+	
+	
 }
