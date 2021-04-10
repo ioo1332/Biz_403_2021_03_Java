@@ -23,19 +23,30 @@ public class ScoreServiceImplV3 extends ScoreServiceImplV2{
 			if(strM.equals("QUIT")) {
 				break;
 			}
+			Integer intM = null;
 			try {
 				intM=Integer.valueOf(strM);
 			} catch (NumberFormatException e) {
 				// TODO Auto-generated catch block
 				//e.printStackTrace();
-				System.out.println("");
-				this.ScoreToFile();
+				System.out.println("메뉴는 1~3까지 선택 종료 QUIT");
+				continue;
 			} 
+			if(intM == 1) {
+				this.inputScore();
+			} else if(intM == 2) {
+				this.printScore();
+			} else if(intM == 3) {
+				// 파일에 저장
+				this.scoreToFile();
+			}
 		}
-		System.out.println("휴일 잘보내ㅐ세요");
-	}
+		System.out.println("업무 종료 편한 휴일 보내세요");
+		}
+		
+	
 //입력된 성적 리스트 파일에 저장하기
-	protected void ScoreToFile() {
+	protected void scoreToFile() {
 		
 	}
 }
