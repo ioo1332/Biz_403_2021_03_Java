@@ -19,6 +19,11 @@ public class MenuServiceImplV1 implements MenuService {
 	 * 생성자에 매개변수 선언 MenuServiceImplV1 클래스를 사용하여 객체를 생성할때는 title 변수와 menuList에 값을 담아서
 	 * 파라메터로 전달하고 생성자를 호출을 해야 한다.
 	 */
+	
+	/* new MenuServiceImplV1 형식으로 작성이 안된다
+	 * 반드시 string, List형 두가지값을 전달해줘야한다
+	 * new MenuServiceImplV1(title,menuList)형식으로 작성 해야 한다.
+	 */
 	public MenuServiceImplV1(String title, List<String> menuList) {
 
 		// 객체를 생성할때 전달한 매개변수 title을
