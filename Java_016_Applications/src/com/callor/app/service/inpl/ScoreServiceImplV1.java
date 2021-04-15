@@ -2,7 +2,7 @@ package com.callor.app.service.inpl;
 
 import com.callor.app.service.ScoreService;
 
-public class ScoreServiceImpV1 implements ScoreService {
+public class ScoreServiceImplV1 implements ScoreService {
 
 	@Override
 	public void selectMenu() {

@@ -1,7 +1,7 @@
 package com.callor.app;
 
 import com.callor.app.service.ScoreService;
-import com.callor.app.service.inpl.ScoreServiceImpV1;
+import com.callor.app.service.inpl.ScoreServiceImplV1;
 
 public class ScoreEx_01 {
 	
@@ -18,7 +18,7 @@ public class ScoreEx_01 {
 		 * 3. 따라서 ScoreSerivceimplV1의 method를 호출하는 코드는 잠시 만들어두고
 		 * 이후 코드에 집중하여 코딩을 계속 할수있다
 		 */
-		ScoreService sService=new ScoreServiceImpV1();
+		ScoreService sService=new ScoreServiceImplV1();
 		
 		sService.inputScore();
 		sService.printScore();
