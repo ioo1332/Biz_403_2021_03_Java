@@ -74,7 +74,6 @@ public class ScoreServiceImplV1 implements ScoreService{
 		
 	}
 
-	@Override
 	public void printStudent() {
 		// TODO Auto-generated method stub
 		

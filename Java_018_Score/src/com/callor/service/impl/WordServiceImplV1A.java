@@ -9,9 +9,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import com.callor.score.service.WordService;
 import com.callor.service.model.WordVO;
 
-public class WordServiceImplV1A {
+public class WordServiceImplV1A implements WordService{
 	protected final int 영어 = 0;
 	protected final int 한글 = 1;
 	
