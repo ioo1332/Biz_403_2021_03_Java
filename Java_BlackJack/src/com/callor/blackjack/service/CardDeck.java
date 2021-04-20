@@ -6,18 +6,18 @@ import java.util.Random;
 
 import com.callor.blackjack.model.CardVO;
 
-public class Card {
+public class CardDeck {
 
 	private List<CardVO> cardList;
 	private Random rnd;
 	private String[] pattern;
 	private String[] cardNumber;
 
-	public Card() {
+	public CardDeck() {
 		cardList = new ArrayList<CardVO>();
 		rnd = new Random();
 		pattern = new String[] { "♠", "◆", "♥", "♣" };
-		cardNumber = new String[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K" };
+		cardNumber = new String[] { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 	}
 
 	public void makeCard() {
@@ -28,24 +28,32 @@ public class Card {
 				cardVO.setPattern(pattern[i]);
 				cardVO.setCardNumber(cardNumber[i]);
 				cardList.add(cardVO);
+				this.makeNum();
 			}
 		}
-		//AJQK 숫자로 변환해주기
+	}
+
+	public void makeNum() {
+		// AJQK 숫자로 변환해주기
 		for (int i = 0; i < cardList.size(); i++) {
 			CardVO cdVO = cardList.get(i);
-			Integer num=null;
-			num=Integer.valueOf(cdVO.getCardNumber());
-			if(num.equals("A")) {
-				num=1;
-			}if(num.equals("J")) {
-				num=10;
-			}if(num.equals("Q")) {
-				num=10;
-			}if(num.equals("K")) {
-				num=10;
-			}//잠옴 수정해야함ㅇㅇ
+			Integer num = null;
+			num = Integer.valueOf(cdVO.getCardNumber());
+			if (num.equals("A")) {
+				num = 1;
+			}else if (num.equals("J")) {
+				num = 10;
+			}else if (num.equals("Q")) {
+				num = 10;
+			}else if (num.equals("K")) {
+				num = 10;
+			}
 			cdVO.setNumber(num);
+			cardList.add(cdVO);
+			
 		}
-
+		
 	}
+	
+	
 }
