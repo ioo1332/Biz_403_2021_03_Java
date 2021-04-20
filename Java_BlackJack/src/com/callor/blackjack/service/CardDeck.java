@@ -50,7 +50,6 @@ public class CardDeck {
 			}
 			cdVO.setNumber(num);
 			cardList.add(cdVO);
-			
 		}
 		
 	}
