@@ -1,17 +1,23 @@
 package com.callor.blackjack.service;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import com.callor.blackjack.model.CardVO;
+import com.callor.blackjack.model.DeckVO;
 
 public class GameService {
 	protected Scanner scan;
 	protected CardVO cardVO;
+	protected List<DeckVO> deckList;
 
 	public GameService() {
 		// TODO Auto-generated constructor stub
 		scan = new Scanner(System.in);
 		cardVO = new CardVO();
+		deckList =new ArrayList<DeckVO>();
 	}
 
 	public void mainMunu() {
@@ -36,12 +42,26 @@ public class GameService {
 			}
 			if (intMenu == 1) {
 				System.out.println("카드 돌리기");
-				this.startGame();
+				this.getDeck();
 			}
 		}
 	}// end mainMenu
-
+	public DeckVO getDeck() {
+		
+		Random rnd=new Random();
+		int nSize=deckList.size();
+		
+		int deckIndex=rnd.nextInt(nSize);
+		System.out.println(deckIndex);
+		DeckVO retDeckVO=deckList.get(deckIndex);
+		//카드를 뽑고 덱에서 지움
+		deckList.remove(deckIndex);
+		return retDeckVO;
+		
+	}
 	public void startGame() {
+		
+		
 
 	}
 
