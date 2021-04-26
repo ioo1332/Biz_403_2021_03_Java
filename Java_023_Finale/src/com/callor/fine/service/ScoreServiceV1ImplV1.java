@@ -8,8 +8,8 @@ import com.callor.fine.model.ScoreVO;
 
 public class ScoreServiceV1ImplV1 implements ScoreService {
 
-	private List<ScoreVO> scoreList;
-	private Scanner scan;
+	protected List<ScoreVO> scoreList;
+	protected Scanner scan;
 
 	public ScoreServiceV1ImplV1() {
 		// TODO Auto-generated constructor stub

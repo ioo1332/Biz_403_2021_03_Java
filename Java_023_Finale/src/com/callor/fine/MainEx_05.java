@@ -14,17 +14,18 @@ public class MainEx_05 {
 			nums[i]=rnd.nextInt(100)+1;
 		}
 		//배열 100개에 저장된 값 중에서 소수인 값들만 출력
-		for(int i=0;nums.length;i++) {
+		for(int i=0;i<nums.length;i++) {
 			int index=0;
 			for(index=2;index<nums.length;index++) {
-				if(?%??==0) {
+				if(nums[i]%nums.length==0) {
 					break;
 				}
 			}
-			if(?<??){
-				System.out.println();
+			//?
+			if(nums[i]){
+				System.out.println(nums[i]+"소수");
 			}else {
-				System.out.println();
+				System.out.println(nums[i]+"소수아님");
 			}
 			
 		}
