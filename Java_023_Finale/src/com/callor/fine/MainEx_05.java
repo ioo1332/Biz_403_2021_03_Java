@@ -17,15 +17,15 @@ public class MainEx_05 {
 		for(int i=0;i<nums.length;i++) {
 			int index=0;
 			for(index=2;index<nums.length;index++) {
-				if(nums[i]%nums.length==0) {
+				if(nums[i]%index==0) {
 					break;
 				}
 			}
 			//?
-			if(nums[i]){
-				System.out.println(nums[i]+"소수");
-			}else {
+			if(index<nums[i]){
 				System.out.println(nums[i]+"소수아님");
+			}else {
+				System.out.println(nums[i]+"소수");
 			}
 			
 		}

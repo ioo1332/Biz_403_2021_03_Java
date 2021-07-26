@@ -7,7 +7,9 @@ public class MainEx_02 {
 	
 	public static void main(String[] args) {
 		ScoreVO[] scoreVO=new ScoreVO[10];
-		
+		for(int i = 0; i < scoreVO.length; i++) {
+			scoreVO[i] = new ScoreVO();
+		}
 		int index=3;
 		scoreVO[index].setNum("0001");
 		scoreVO[index].setKor(90);
